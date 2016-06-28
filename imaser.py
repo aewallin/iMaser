@@ -29,10 +29,11 @@ def get_params():
 	dds = dds[7:-3]
 	print "RDFS=", dds
 	fieldDict['RDFS'] = float(dds)
-	print fieldDict
+	return fieldDict
 
 if __name__ == "__main__":
 	# example string for testing
-	s = "$41203D4819F157B7882021A4C490CF0D70C01CC0D80EA08509A6900B18D6014CE4B44043B4403B0B29697FE016C5E9CAFDC8C18000CBDC011"
-	d = imaser_parser.imaser_parse(s)
+	# s = "$41203D4819F157B7882021A4C490CF0D70C01CC0D80EA08509A6900B18D6014CE4B44043B4403B0B29697FE016C5E9CAFDC8C18000CBDC011"
+	# d = imaser_parser.imaser_parse(s)
+	d = get_params()
 	print d
